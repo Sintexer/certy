@@ -6,3 +6,7 @@ pluginManagement {
 	}
 }
 rootProject.name = 'certy'
+include 'app'
+include 'service'
+include 'dal'
+
