@@ -13,7 +13,6 @@ allprojects {
     group = 'com.ilboogl.certy'
     version = '0.0.1'
     sourceCompatibility = '11'
-
 }
 
 springBoot {
