@@ -7,3 +7,7 @@ management:
 springdoc:
   swagger-ui:
     path: "/docs/swagger"
+
+certy:
+  messages:
+    source: "classpath:messages"
