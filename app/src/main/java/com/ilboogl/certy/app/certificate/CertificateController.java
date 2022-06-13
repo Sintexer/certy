@@ -24,13 +24,13 @@ public class CertificateController {
     }
 
     @GetMapping("/")
-    public Certificate getCertificate1() {
-        return new Certificate("1", "1", BigDecimal.ONE, 1L, now(), now());
+    public Certificate getAllCertificates() {
+        return null;
     }
 
     @GetMapping("/{id}")
     public Certificate getCertificate(@PathVariable Long id) {
-        return new Certificate("1", "1", BigDecimal.ONE, 1L, now(), now());
+        return null;
     }
 
 }

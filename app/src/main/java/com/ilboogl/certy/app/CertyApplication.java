@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @SpringBootApplication(scanBasePackageClasses = {ServiceComponentScanMarker.class, CertyApplication.class})
-@Controller
 public class CertyApplication {
     public static void main(String[] args) {
         SpringApplication.run(CertyApplication.class, args);
