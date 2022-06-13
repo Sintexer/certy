@@ -1,10 +1,13 @@
 package com.ilboogl.certy.service.certificate.model;
 
+import lombok.ToString;
+
 import javax.validation.constraints.Min;
 
 /**
  * Represents price in dollars.
  */
+@ToString
 public class Price {
 
     @Min(value = 0, message = "price.error.cannot.be.negative")
@@ -25,5 +28,7 @@ public class Price {
     public long getCents() {
         return cents % 100;
     }
+
+
 
 }

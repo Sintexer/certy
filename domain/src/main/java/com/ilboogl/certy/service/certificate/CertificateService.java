@@ -1,11 +1,16 @@
 package com.ilboogl.certy.service.certificate;
 
 import com.ilboogl.certy.service.certificate.exception.CertificateNotFoundException;
+import com.ilboogl.certy.service.certificate.model.CreateCertificateQuery;
 import com.ilboogl.certy.service.certificate.port.CertificatePort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.validation.annotation.Validated;
+
+import javax.validation.Valid;
 
 @Service
+@Validated
 public class CertificateService implements CertificateUseCase {
 
     private final CertificatePort certificatePort = null;
@@ -22,9 +27,9 @@ public class CertificateService implements CertificateUseCase {
     }
 
     @Override
-    public Certificate create(Certificate certificate) {
+    public Certificate create(@Valid CreateCertificateQuery createQuery) {
         // TODO validate id is 0
-        return certificatePort.save(certificate);
+        return null;
     }
 
     @Override
