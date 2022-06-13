@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class CertificateService implements CertificateUseCase {
 
-    private final CertificatePort certificatePort;
+    private final CertificatePort certificatePort = null;
 
-    @Autowired
-    CertificateService(CertificatePort certificatePort) {
-        this.certificatePort = certificatePort;
-    }
+//    @Autowired
+//    CertificateService(CertificatePort certificatePort) {
+//        this.certificatePort = certificatePort;
+//    }
 
     @Override
     public Certificate getById(Long id) {

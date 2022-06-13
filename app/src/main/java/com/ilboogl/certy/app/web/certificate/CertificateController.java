@@ -1,4 +1,4 @@
-package com.ilboogl.certy.app.certificate;
+package com.ilboogl.certy.app.web.certificate;
 
 import com.ilboogl.certy.service.certificate.Certificate;
 import com.ilboogl.certy.service.certificate.CertificateUseCase;
