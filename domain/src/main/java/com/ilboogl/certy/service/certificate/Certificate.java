@@ -13,7 +13,6 @@ import java.util.List;
 @AllArgsConstructor
 @RequiredArgsConstructor
 public class Certificate {
-    // TODO add validation
     private Long id;
     private final String name;
     private final String description;
