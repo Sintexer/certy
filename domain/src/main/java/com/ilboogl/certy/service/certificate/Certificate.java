@@ -1,5 +1,6 @@
 package com.ilboogl.certy.service.certificate;
 
+import com.ilboogl.certy.service.certificate.model.Price;
 import com.ilboogl.certy.service.tag.Tag;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,10 +17,9 @@ public class Certificate {
     private Long id;
     private final String name;
     private final String description;
-    private final BigDecimal price;
+    private final Price price;
     private final Long duration;
     private final LocalDateTime createDate;
     private final LocalDateTime lastUpdateDate;
-
     private final List<Tag> tags;
 }

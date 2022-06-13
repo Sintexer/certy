@@ -10,11 +10,11 @@ public class Price {
     @Min(value = 0, message = "price.error.cannot.be.negative")
     private final long cents;
 
-    Price(long cents) {
+    public Price(@Min(0) long cents) {
         this.cents = cents;
     }
 
-    Price(long dollars, long cents) {
+    public Price(@Min(0) long dollars, @Min(0) long cents) {
         this.cents = dollars * 100 + cents;
     }
 
