@@ -10,7 +10,6 @@ import org.springframework.validation.annotation.Validated;
 import javax.validation.Valid;
 
 @Service
-@Validated
 public class CertificateService implements CertificateUseCase {
 
     private final CertificatePort certificatePort = null;
@@ -27,7 +26,7 @@ public class CertificateService implements CertificateUseCase {
     }
 
     @Override
-    public Certificate create(@Valid CreateCertificateQuery createQuery) {
+    public Certificate create(CreateCertificateQuery createQuery) {
         // TODO validate id is 0
         return null;
     }

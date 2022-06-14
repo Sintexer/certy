@@ -13,16 +13,16 @@ import javax.validation.constraints.NotNull;
 @RequiredArgsConstructor
 public class CreateCertificateQuery {
 
-    @NotBlank(message = "certificate.create.error.name.blank")
+    @NotBlank(message = "{certificate.create.error.name.blank}")
     private final String name;
 
-    @NotBlank(message = "certificate.create.error.description.blank")
+    @NotBlank(message = "{certificate.create.error.description.blank}")
     private final String description;
 
     @Valid
-    @NotNull
+    @NotNull(message = "{certificate.create.error.price.notNull}")
     private final Price price;
 
-    @Min(value = 1, message = "certificate.create.error.duration")
+    @Min(value = 1, message = "{certificate.create.error.duration}")
     private long duration;
 }

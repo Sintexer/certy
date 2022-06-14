@@ -14,9 +14,9 @@ import org.springframework.http.HttpStatus;
 public class ErrorDataModel {
     private final int httpErrorCode;
     private final String message;
-    private final ApplicationErrorCode appErrorCode;
+    private final int appErrorCode;
 
     public static ErrorDataModel notFound(String message, ApplicationErrorCode appErrorCode) {
-        return new ErrorDataModel(HttpStatus.NOT_FOUND.value(), message, appErrorCode);
+        return new ErrorDataModel(HttpStatus.NOT_FOUND.value(), message, appErrorCode.value());
     }
 }

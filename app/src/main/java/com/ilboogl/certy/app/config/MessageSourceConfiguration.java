@@ -9,7 +9,7 @@ import org.springframework.context.support.ReloadableResourceBundleMessageSource
 /**
  * Configures application message source by parameters provided in application properties:
  * `certy.messages.source` and `certy.messages.encoding`.
- *
+ * <p>
  * If no default encoding provided, UTF8 will be used.
  */
 @Configuration
